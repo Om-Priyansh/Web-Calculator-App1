@@ -221,8 +221,98 @@ form input.operator{
 
 
 
+@media screen and (max-width: 600px){
 
+    
 
+    header
+    {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        padding: 50px 20px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        /* z-index: 10000; */
+    }
+    
+    header .logo
+    {
+        color: #121212;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        letter-spacing: 2px;    
+    }
+    
+    header ul
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header ul li
+    {
+        list-style: none;
+        margin-left: 20px;
+    }
+    
+    header ul li a
+    {
+        text-decoration: none;
+        padding: 6px 15px;
+        color: #121212;
+    }
+    
+    header ul li a:hover , .active
+    {
+        background: #121212;
+        color: #fff;
+        border-radius: 20px;
+    }
+    
+    form .display input{
+        /* font-size: 30px; */
+        box-shadow: none;
+    }
+    
+
+    .calculator{
+        /* background: #3a4452; */
+        /* background: #3a4452; */
+        background: #603775;
+        /* background: linear-gradient(#97B7D0, #FFF); */
+        /* padding-right: 10px; */
+        /* margin-left: 50px; */
+        border-radius: 10px;
+        animation: 2s cubic-bezier(0, 0, 0, 1) 0s 1 slideInBottom;
+        z-index: 1000;
+    }
+
+    
+    .calculator form input{
+        border: 0;
+        outline: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        box-shadow: -8px -8px 15px #ffffff1d,5px 5px 15px #00000031;
+        background: transparent;
+        font-size: 15px;
+        color: #fff;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .Text{
+        display: none;
+    }
+    
+}
 
 
 
